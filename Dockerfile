@@ -7,6 +7,9 @@ ENV PYTHONIOENCODING="UTF-8"
 # set default fork to sickrage/sickrage
 ENV FORK=sickrage/sickrage
 
+# set default branch to master
+ENV BRANCH=master
+
 # copy local files
 COPY root/ /
 

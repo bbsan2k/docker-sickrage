@@ -2,7 +2,7 @@
 
 # install app
 [[ ! -d /app/sickrage/.git ]] && \
-	git clone https://github.com/${FORK}.git /app/sickrage
+	git clone -b ${BRANCH} https://github.com/${FORK}.git /app/sickrage
 
 # permissions
 chown -R abc:abc \

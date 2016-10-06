@@ -29,6 +29,7 @@ docker create --name=sickrage \
 -e PGID=<gid> -e PUID=<uid>  \
 -e TZ=<timezone> \
 -e FORK=<githubFork>
+-e BRANCH=<gitBranch>
 -p 8081:8081 \
 linuxserver/sickrage
 ```
@@ -43,6 +44,7 @@ linuxserver/sickrage
 * `-e PUID` for UserID - see below for explanation
 * `-e TZ` for timezone information, eg Europe/London
 * `-e FORK` for custom github sickrage fork, eg cytec/sickrage
+* `-e BRANCH` for custom git branch, eg develop
 
 It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it sickrage /bin/bash`.
 
